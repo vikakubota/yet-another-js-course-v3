@@ -1,4 +1,3 @@
-```sh
 ## Prerequisites
 
 Before running the tests, ensure you have the following installed:
