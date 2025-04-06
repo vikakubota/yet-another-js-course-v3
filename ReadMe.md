@@ -47,7 +47,3 @@ To specify multiple browsers to run your tests on, use the `--project` flag mult
 ```bash
 npx playwright test --project webkit --project firefox
 ```
-
-
-
-```
