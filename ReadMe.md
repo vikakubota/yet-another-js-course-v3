@@ -31,19 +31,19 @@ npx playwright test
 npx playwright test --ui
 ```
 
-##Run tests in headed mode
+## Run tests in headed mode
 
 ```bash
 npx playwright test --headed
 ```
 
-##Run tests on different browsers
+## Run tests on different browsers
 
-To specify which browser you would like to run your tests on, use the --project flag followed by the name of the browser.
+To specify which browser you would like to run your tests on, use the `--project` flag followed by the name of the browser.
 ```bash
 npx playwright test --project webkit
 ```
-To specify multiple browsers to run your tests on, use the --project flag multiple times followed by the name of each browser.
+To specify multiple browsers to run your tests on, use the `--project` flag multiple times followed by the name of each browser.
 ```bash
 npx playwright test --project webkit --project firefox
 ```
