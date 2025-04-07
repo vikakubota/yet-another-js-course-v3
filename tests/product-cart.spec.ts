@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-    await page.goto(process.env.WEB_URL as string);
+    await page.goto('/');
     await page.click('[data-test="product-01JR5X9HFW34R5EZ9D2SZ1H1GR"]');
 });
 
