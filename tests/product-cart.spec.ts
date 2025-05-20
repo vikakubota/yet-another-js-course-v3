@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-    await page.goto(process.env.WEB_URL as string);
-    await page.getByRole('link', {name: 'Slip Joint Pliers'}).click();
+    await page.goto('/');
+    await page.getByAltText('Slip Joint Pliers').click(); 
 });
 
 test.describe('Verify user can add product to the cart', () => {
@@ -25,7 +25,7 @@ test.describe('Verify user can add product to the cart', () => {
         await page.click('#btn-add-to-cart');
         await page.click('#lblCartCount');
 
-        await expect(page).toHaveURL(process.env.WEB_URL + '/checkout');
+        await expect(page).toHaveURL('/checkout');
         await expect(page.locator('[type="number"]')).toHaveValue('1');
         await expect(page.locator('[data-test="product-title"]')).toHaveText('Slip Joint Pliers');
         await expect(page.locator('[data-test="proceed-1"]')).toBeVisible();
